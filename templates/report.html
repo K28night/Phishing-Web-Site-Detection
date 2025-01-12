@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    {% load widget_tweaks %}
+<head>
+    <title>Home</title></head>
+    <body background="{% static 'img/l1.jpg' %}">
+<h1 style="color: bisque; text-align: center;">Report</h1>
+ <center><form method="POST">
+    {% csrf_token %}
+    <!-- <textarea id="area" name="area" placeholder="Enter your website url....."
+    style="width: 350px;height: 120px;
+           padding: 10px; border:3px dashed indigo;
+           background-color:aliceblue;">
+</textarea> -->
+<label style="color:rgb(210, 207, 231);"><b>Site Name</b></label></tagname><br><br><br>
+
+{% render_field form.sitename class="form-control" %}<br><br>
+
+<label  style="color:rgb(235, 234, 247);"><b>Reason</b></label></tagname><br><br><br>
+
+{% render_field form.reason class="form-control" %}<br><br>
+
+<br><br><br>
+<input class="button" name="Submit" type="Submit" value="Report" />
+</form></center>
+</body>
+</html>

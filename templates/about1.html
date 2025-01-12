@@ -1,0 +1,178 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body><h1><b>process behind Phishing</b></h1>
+    <img class="" src="https://www.ncsc.gov.uk/images/Phishing-vector - Copy.png?mpwidth=545&amp;mlwidth=737&amp;twidth=961&amp;dwidth=635&amp;dpr=1.25&amp;width=1536" alt="Fishing hook capturing email on laptop" aria-hidden="false">
+    <div class="row"><div class="article-columns-content col-md-12 col-lg-12"><div class="in-this-guide-container"><div class="pcf-in-this-guide"><div class="rectangle-7 top-line"></div><h5>On this page</h5>
+    <ul role="menu" aria-label="content" class="table-contents">
+        <li aria-label="menu item 1 of 6" role="menuitem"><span>1.</span><a href="#section_1" aria-label="In this guide item: Introduction to Phishing">Introduction to Phishing</a></li>
+        <li aria-label="menu item 2 of 6" role="menuitem"><span>2.</span><a href="#section_2" aria-label="In this guide item: What is phishing?">What is phishing?</a></li>
+        <li aria-label="menu item 3 of 6" role="menuitem"><span>3.</span><a href="#section_3" aria-label="In this guide item: Phishing defences: why you need a multi-layered approach">Phishing defences: why you need a multi-layered approach</a></li>
+            <div><h2>Introduction to Phishing</h2><div class="pcf-BodyText"><p><strong>Phishing attacks: defending your organisation</strong>&nbsp;provides a multi-layered set of mitigations to improve your organisation's resilience against phishing attacks, whilst minimising disruption to user productivity.&nbsp;The defences suggested in this guidance are also useful against other types of cyber attack, and will help your organisation become more resilient overall.</p>
+<ul>
+<li>This guidance is aimed at technology, operations or security staff responsible for designing and implementing defences for medium to large organisations. This includes staff responsible for phishing training.</li>
+<li>Staff within smaller organisations will also find this guidance useful, but should refer to the <a href="/blog-post/cyber-security-small-business-guide" target="_self">NCSC's Small Business Guide</a> beforehand.</li>
+<li>This guidance concludes with a real-world example that illustrates how a multi-layered approach prevented a phishing attack from damaging a major financial-sector organisation.</li>
+</ul>
+<p>Note: The mitigations included in this guidance require a combination of technological, process, and people-based approaches. They must be considered as a whole for your defences to be really effective. For example, if you want to encourage people to report suspicious emails, then you need to back that up with a technical means of doing so, and a process behind it that will provide timely feedback on the email they submitted.</p></div></div></div><div class="pcf-article-content-item" id="section_2"><hr><div><h2>What is phishing?</h2><div class="pcf-BodyText"><p>Phishing is when attackers attempt to trick users into doing 'the wrong thing', such as clicking a bad link that will download malware, or direct them to a dodgy website.</p>
+<p>Phishing can be conducted via a text message, social media, or by phone, but the term 'phishing' is mainly used to describe attacks that arrive by email. Phishing emails can reach millions of users directly, and hide amongst the huge number of benign emails that busy users receive. Attacks can install malware (such as ransomware), sabotage systems, or steal intellectual property and money.</p>
+<p>Phishing emails can hit an organisation of any size and type. You might get caught up in a mass campaign (where the attacker is just looking to collect some new passwords or make some easy money), or it could be the first step in a targeted attack against your company, where the aim could be something much more specific, like the theft of sensitive data. In a targeted campaign, the attacker may use information about your employees or company to make their messages even more persuasive and realistic. This is usually referred to as <strong>spear phishing</strong>.</p>
+<p><br></p>
+<h3>Every organisation can play a part</h3>
+<p>The mitigations described here are mostly focused on preventing the impact of phishing attacks within your organisation, but they include some measures that will help protect the whole of the UK. For example, setting up DMARC stops phishers from spoofing your domain (that is, making their emails look like they come from your organisation). There are numerous benefits in doing this:</p>
+<ol>
+<li>Your own company's genuine emails are more likely to reach the recipients' inboxes, rather than getting filtered out as spam.</li>
+<li>From a reputational aspect, no organisation wants their name becoming synonymous with scams and fraud.</li>
+<li>The wider community will also benefit if your contacts (such as suppliers, partners and customers) are encouraged to register their details with DMARC. This can give you much greater assurance that the email asking for information (or money) actually comes from where you think.</li>
+</ol></div></div><div class="pcf-informationPanel"><div class="pcf-image false"><img class="" src="https://www.ncsc.gov.uk/images/DMARC - Copy.jpg?mpwidth=545&amp;mlwidth=737&amp;twidth=961&amp;dwidth=635&amp;dpr=1.25&amp;width=1536" alt="DMARC" aria-hidden="false"></div><div class="pcf-informationPanel__content"><div class="pcf-informationPanel__body"><p>The NCSC are encouraging organisations to lead by example and&nbsp;<a href="https://www.gov.uk/government/publications/email-security-standards/domain-based-message-authentication-reporting-and-conformance-dmarc" target="_self">set up DMARC</a>, and then start asking their contacts to do the same. It's in everyone's interest to promote widespread adoption, as the more organisations that take part, the harder it is for the phishers to succeed.</p></div></div></div></div><div class="pcf-article-content-item" id="section_3"><hr><div><h2>Phishing defences: why you need a multi-layered approach</h2><div class="pcf-BodyText"><p>Typical defences against phishing often rely exclusively on users being able to spot phishing emails.&nbsp;<a href="/blog-post/im-gonna-stop-you-little-phishie" target="_self">This approach will only have limited success</a>. Instead, you should widen your defences to include more technical measures. This will improve your resilience against phishing attacks without disrupting the productivity of your users. You'll have multiple opportunities to detect a phishing attack, and then stop it before it causes harm. You also acknowledge that some attacks will get through, as this will help you plan for incidents, and minimise the damage caused.</p>
+<p>This guidance splits the mitigations into four layers on which you can build your defences:</p>
+<ol>
+<li>Make it difficult for attackers to reach your users</li>
+<li>Help users identify and report suspected phishing emails</li>
+<li>Protect your organisation from the effects of undetected phishing emails</li>
+<li>Respond quickly to incidents&nbsp;</li>
+</ol>
+<!--
+<p>Some of the suggested mitigations may not be feasible within the context of your organisation. If you can't implement all of them, try to address at least some of the mitigations&nbsp;<strong>from within each of the layers</strong>.&nbsp;The mitigations within each layer are summarised in the following infographic.</p>
+<h3 id="Phishingattacks:defendingyourorganisation-Summaryofmulti-layeredapproachtophishingdefences">Summary of multi-layered approach to phishing defences</h3>
+<p><img src="/static-assets/images/phishing_infographic_final.jpg" p=""><a href="#downloads" target="_self">Download the phishing attacks infographic below (pdf)</a></p></div></div></div><div class="pcf-article-content-item" id="section_4"><hr><div><h2>  Four layers of mitigation </h2></div><div class="pcf-accordion"><div class="pcf-accordionItem" id="Layer 1: Make it difficult for attackers to reach your users"><div class="accordion-header" role="button" aria-expanded="false" tabindex="0"><h3>Layer 1: Make it difficult for attackers to reach your users</h3><div class="expand-container"><img src="/static-assets/dist/ncsc/static/media/Expand.1f28b005.svg" alt=""></div></div><div class="accordion-panel hidden"><div><div class="pcf-BodyText"><p>This section describes the defences that can make it difficult for attackers to even reach your end users.</p>
+<h3>Don't let your email addresses be a resource for attackers</h3>
+<p>Attackers 'spoof' trusted emails, making <strong>their</strong> emails look like they were sent by reputable organisations (such as yours). These spoofed emails can be used to attack your customers, or people within your organisation.</p>
+<ul>
+<li>Make it harder for email from your domains to be spoofed by employing the anti-spoofing controls: <a href="https://www.ncsc.gov.uk/collection/email-security-and-anti-spoofing" target="_self">DMARC, SPF and DKIM</a>, and encourage your contacts to do the same.</li>
+</ul>
+<p><br></p>
+<h3>Reduce the information available to attackers</h3>
+<p>Attackers use publicly available information about your organisation and users to make their phishing (and particularly spear phishing) messages more convincing. This is often gleaned from your website and social media accounts (information known as a 'digital footprint').</p>
+<p><strong>How do I do this?</strong></p>
+<ul>
+<li>Consider what visitors to your website need to know, and what detail is unnecessary (but could be useful for attackers)? This is particularly important for high profile members of your organisation, as this information could be used to craft personalised whaling attacks (a type of spear phishing that targets a big phish, such as a board member who has access to valuable assets).</li>
+<li>Help your staff understand how sharing their personal information can affect them and your organisation, and develop this into a clear digital footprint policy for all users. <a href="https://www.cpni.gov.uk/my-digital-footprint" target="_blank">CPNI’s Digital Footprint Campaign</a> contains a range of useful materials (including posters and booklets).</li>
+<li>Be aware of what your partners, contractors and suppliers give away about your organisation online.</li>
+</ul>
+<p><br></p>
+<h3>Filter or block incoming phishing emails</h3>
+<p>Filtering or blocking a phishing email before it reaches your users not only reduces the probability of a phishing incident; it also reduces the amount of time users need to spend checking and reporting emails. Your filtering/blocking service might be a cloud-based email provider's built-in service, or a bespoke service for your own email server.</p>
+<p><strong>How do I do this?</strong></p>
+<ul>
+<li>Check all incoming email for spam, phishing and malware. Suspected phishing emails should be filtered or blocked before they reach your user. Ideally this should be done on the server, but it can also be done on end user devices (ie in the mail client).</li>
+<li>For inbound email, anti-spoofing policies of the sender's domain should be honoured. If the sender has a DMARC policy in place with a policy of quarantine or reject, then you should do as requested if validation checks fail.</li>
+<li>If you use a cloud-based email provider, ensure that their filtering/blocking service is sufficient for your needs, and that it is switched on by default for all your users. If you host your own email server, ensure that a proven filtering/blocking service is in place. This can be implemented locally and/or purchased as a cloud-based service. Again, ensure that it is switched on by default for all your users.</li>
+<li><strong>Filtering</strong> services usually send email to spam/junk folders, while <strong>blocking</strong> services ensures that they never reach your user. The rules determining blocking or filtering need to be fine-tuned for your organisation's needs. If you filter all suspicious emails to spam/junk folders, users will have to manage a large number of emails, adding to their workload and leaving open the possibility of a click. However, if you block all suspicious emails, some legitimate emails could get lost. You may have to change the rules over time to ensure the best compromise, and to respond to your business's changing needs and ways of working.</li>
+<li>Filtering email on end user devices can offer an additional layer of defence against malicious emails. However, this should not compensate for ineffective server-based measures, that could block a large number of incoming phishing emails entirely.</li>
+<li>Email can be filtered or blocked using a variety of techniques including: IP addresses, domain names, email address allow/deny list, public spam and open relay deny lists, attachment types, and malware detection.</li>
+</ul></div></div><div class="termButtons"></div></div></div><div class="pcf-accordionItem" id="Layer 2: Help users identify and report suspected phishing emails"><div class="accordion-header" role="button" aria-expanded="false" tabindex="0"><h3>Layer 2: Help users identify and report suspected phishing emails</h3><div class="expand-container"><img src="/static-assets/dist/ncsc/static/media/Expand.1f28b005.svg" alt=""></div></div><div class="accordion-panel hidden"><div><div class="pcf-BodyText"><p>This section outlines how to help your staff spot phishing emails, and how to improve your reporting culture.</p>
+<h3 id="Phishingattacks:defendingyourorganisation-Carefullyconsideryourapproachtophishingtraining">Carefully consider your approach to phishing training</h3>
+<p>Training your users - particularly in the form of phishing simulations - is the layer that is often over-emphasised in phishing defence. Your users cannot compensate for cyber security weaknesses elsewhere. Responding to emails and clicking on links is a huge part of the modern workplace, so it's unrealistic to expect users to remain vigilant all the time.</p>
+<p>Spotting phishing emails is hard, and spear phishing is even harder to detect.&nbsp;<a href="https://www.ncsc.gov.uk/blog-post/serious-side-pranking" target="_self">Even experts from the NCSC struggle</a>. The advice given in many training packages, based on standard warnings and signs, will help your users spot some phishing emails, but they cannot teach everyone to spot all phishing emails.</p>
+<p><strong>How do I do this?</strong></p>
+<ul>
+<li>Make it clear that phishing messages can be difficult to spot, and you do not expect people to be able to identify them 100% of the time. Never punish users who are struggling to recognise phishing emails;&nbsp;<a href="https://www.ncsc.gov.uk/blog-post/trouble-phishing#section_3" target="_self">it's a bad idea for many reasons</a>. Users who fear reprisals will not report mistakes promptly, if at all.</li>
+<li>Training should encourage your users' willingness to report future incidents, and re-assure them that it is OK to ask for further support when something looks suspicious. This message needs buy-in across all departments including HR, support and senior management.</li>
+<li>Ensure that your users understand the nature of the threat posed by phishing, especially those departments that may be more vulnerable to it. Customer-facing departments may receive high volumes of unsolicited emails, whereas staff authorised to access sensitive information, manage financial assets, or administer IT systems will be of greater interest to an attacker (and may be the target of a sophisticated spear phishing campaign). Ensure these more vulnerable staff are aware of the risks, and offer them additional support.</li>
+<li>Help your users spot the common features of phishing messages, such as urgency or authority cues that pressure the user to act.&nbsp;<a href="https://www.cpni.gov.uk/security-campaigns/don%E2%80%99t-take-bait-0" target="_blank" title="CPNI's Don't take the bait">CPNI’s Don’t Take the Bait!</a>&nbsp;Campaign provides a range of materials to deliver security messages on this topic.</li>
+<li><a href="https://www.ncsc.gov.uk/blog-post/trouble-phishing" target="_self">Using phishing simulations will not make your organisation more secure</a>. Some companies have user training that gets the participants to craft their own phishing email, giving them a much richer view of the techniques used. Others are experimenting with workshops, quizzes and gamification, making a friendly competition between peers (rather than an 'us vs them' situation with security).<br><br></li>
+</ul>
+<h3 id="Phishingattacks:defendingyourorganisation-Makeiteasierforyouruserstorecognisefraudulentrequests">Make it easier for your users to recognise fraudulent requests</h3>
+<p>Attackers can exploit processes to trick users into handing over information (including passwords), or making unauthorised payments. Consider which processes could be mimicked by attackers, and how to review and improve them so phishing attacks are easier to spot.</p>
+<p>In addition, think about how the emails you send to suppliers and customers will be received. Can your recipients easily distinguish your genuine email from a phishing attack? After all, their users (like yours) cannot be expected to look for and recognise every sign of phishing. Don't assume providing personal information will verify your identity; stolen or researched information is used by phishers to make their emails more convincing.</p>
+<p><strong>How do I do this?</strong></p>
+<ul>
+<li>Ensure staff are familiar with the normal ways of working for key tasks (such as how payments are made), so they're better equipped to recognise unusual requests.</li>
+<li>Make processes more resistant to phishing by ensuring that all important email requests are verified using a second type of communication (such as SMS message, a phone call, logging into an account, or confirmation by post or in-person. Other examples of changing processes include using a different login method, or sharing files though an access-controlled cloud account, rather than sending files as attachments.</li>
+<li>Think about how your outgoing communications appear to suppliers and customers. Is the recipient expecting an email, and will they recognise your email address? Do they have any way of knowing if links are genuine?</li>
+<li>Consider telling your suppliers or customers what to look out for (such as 'we will never ask for your password', or 'our bank details will not change at any point'). This gives the recipient another chance to detect a phish. &nbsp;<br><br></li>
+</ul>
+<h3 id="Phishingattacks:defendingyourorganisation-Createanenvironmentwhichempowersuserstoseekhelp">Create an environment that encourages users to report phishing attempts</h3>
+<p>Building a&nbsp;<a href="https://www.ncsc.gov.uk/blog-post/growing-positive-security-cultures" target="_self">culture</a>&nbsp;where users can report phishing attempts (including ones that that are clicked on) gives you vital information about what types of phishing attacks are being used. You can also learn what type of emails are getting mistaken for phishing, and what impact this might be having on your organisation.</p>
+<p><strong>How do I do this?</strong></p>
+<ul>
+<li>Have an effective process for users to report they think a phishing attempt may have made it past your organisation’s technical defences. Is the process clear, simple and convenient to use? Do users have confidence that reports will be acted on?</li>
+<li>Quickly provide feedback on what action has been taken, and make it clear that their contributions make a difference.</li>
+<li>Think about how you can use informal communication channels (through colleagues, teams, or internal message boards) to create an environment where it is easy for users to ‘ask out loud’ for support and guidance when they may be faced with a phishing attempt.</li>
+<li>Avoid creating a punishment or blame-oriented culture around phishing. It is important that users feel supported to come forward even when they have ‘clicked’ and later believe that something may be suspicious.</li>
+</ul></div></div><div class="termButtons"></div></div></div><div class="pcf-accordionItem" id="Layer 3: Protect your organisation from the effects of undetected phishing emails"><div class="accordion-header" role="button" aria-expanded="false" tabindex="0"><h3>Layer 3: Protect your organisation from the effects of undetected phishing emails</h3><div class="expand-container"><img src="/static-assets/dist/ncsc/static/media/Expand.1f28b005.svg" alt=""></div></div><div class="accordion-panel hidden"><div><div class="pcf-BodyText"><p>Since it's not possible to stop all attacks, this section outlines how to minimise the impact of undetected phishing emails.</p>
+<h3 id="Phishingattacks:defendingyourorganisation-Protectyourdevicesfrommalware">Protect your devices from malware</h3>
+<p>Malware is often hidden in phishing emails, or in websites that they link to.&nbsp;<a href="https://www.ncsc.gov.uk/guidance/end-user-device-security" target="_self">Well configured devices</a>&nbsp;and good end point defences can stop malware installing, even if the email is clicked. There are many other defences against malware and you will need to consider your security needs and ways of working to ensure a good approach. Some defences are specific to particular threats (such as&nbsp;<a href="https://www.ncsc.gov.uk/guidance/macro-security-microsoft-office" target="_self">disabling macros</a>) and some may not be appropriate for all devices (anti-malware software may be pre-installed on some devices and&nbsp;<a href="https://www.ncsc.gov.uk/blog-post/av-or-not-av" target="_self">not needed on others</a>). Finally, the impact of malware on your wider system will depend on how your system has been set up. For more information, see our&nbsp;<a href="https://www.ncsc.gov.uk/collection/cyber-security-design-principles/reducing-the-impact-of-compromise" target="_self">security design principles</a>.&nbsp;</p>
+<p><strong>How do I do this?</strong></p>
+<ul>
+<li>Prevent attackers from using known vulnerabilities by only using supported software and devices. Make sure that software and devices are always kept up to date with the latest patches.</li>
+<li>Prevent users accidentally installing malware from a phishing email, by limiting administrator accounts to those who need those privileges. People with administrator accounts should not use these accounts to check email or browse the web.</li>
+<li>Read the NCSC's&nbsp;<a href="https://www.ncsc.gov.uk/guidance/end-user-device-security" target="_self">End user device (EUD) security guidance</a>.<br><br></li>
+</ul>
+<h3 id="Phishingattacks:defendingyourorganisation-Protectyourusersfrommaliciouswebsites">Protect your users from malicious websites</h3>
+<p>Links to malicious websites are often a key part of a phishing email. However, if the link is unable to open the website, then the attack cannot continue.</p>
+<p><strong>How do I do this?</strong></p>
+<ul>
+<li>Most modern, up-to-date browsers will block known phishing and malware sites. Note that is not always the case on mobile devices.</li>
+<li>Organisations should run a proxy service, either in house or in the cloud, to block any attempt to reach websites which have been identified as hosting malware or phishing campaigns.</li>
+<li>Public sector organisations should use the&nbsp;<a href="https://www.ncsc.gov.uk/information/pdns" rel="nofollow" target="_self">Public Sector DNS service</a>, which will prevent users resolving domains known to be malicious.<br><br></li>
+</ul>
+<h3 id="Phishingattacks:defendingyourorganisation-Protectyouraccountswitheffectiveauthenticationandauthorisation">Protect your accounts with effective authentication and authorisation</h3>
+<p>Passwords are a key target for attackers, particularly if they are for accounts with privileges such as access to sensitive information, handling financial assets, or administering IT systems. You should make your login process to all accounts more resistant to phishing, and limit the number of accounts with privileged access to the absolute minimum.</p>
+<p><strong>How do I do this?</strong></p>
+<ul>
+<li>Add additional security to your login process by&nbsp;<a href="https://www.ncsc.gov.uk/guidance/multi-factor-authentication-online-services" target="_self">setting up multi-factor authentication (MFA)</a>, which is also called 'Two Step Verification (2SV)' on some web services. Having a second factor means that an attacker cannot access an account using just a stolen password.</li>
+<li>Consider using&nbsp;<a href="https://www.ncsc.gov.uk/collection/passwords/password-manager-buyers-guide" target="_self">password managers</a>, some of which can recognise real websites and will not autofill on fake websites. Similarly, you could use a single sign-on method (where the device recognises and signs into the real website automatically). Adopting these techniques means that manually entering passwords becomes unusual, and a user can more easily recognise a suspicious request.</li>
+<li>Consider using alternative login mechanisms (like biometrics or smartcards) that require more effort to steal than passwords.</li>
+<li>The damage an attacker can cause is proportionate to the privileges allocated to the credentials they have stolen. Only provide privileged access to people who need it for their roles. Regularly review these and revoke privileges if no longer needed.</li>
+<li>Remove or suspend accounts that are no longer being used, such as when a member of your organisation leaves or moves to a new role.</li>
+<li>Consider&nbsp;<a href="https://www.ncsc.gov.uk/collection/passwords/updating-your-approach" target="_self">reviewing your password policies</a>. Doing so may (for example) reduce the chance likelihood of staff re-using passwords across home and work accounts.</li>
+</ul></div></div><div class="termButtons"></div></div></div><div class="pcf-accordionItem" id="Layer 4: Respond quickly to incidents"><div class="accordion-header" role="button" aria-expanded="false" tabindex="0"><h3>Layer 4: Respond quickly to incidents</h3><div class="expand-container"><img src="/static-assets/dist/ncsc/static/media/Expand.1f28b005.svg" alt=""></div></div><div class="accordion-panel hidden"><div><div class="pcf-BodyText"><p>All organisations will experience security incidents at some point, so make sure you're in a position to detect them quickly, and to respond to them in a planned way.</p>
+<h3 id="Phishingattacks:defendingyourorganisation-Detectincidentsquickly">Detect incidents quickly</h3>
+<p>Knowing about an incident sooner rather than later allows you to limit the harm it can cause.</p>
+<p><strong>How do I do this?</strong></p>
+<ul>
+<li>Ensure users know in advance how they can report incidents. Bear in mind that they may be unable to access normal means of communication if their device is compromised.</li>
+<li>Use a&nbsp;<a href="https://www.ncsc.gov.uk/guidance/introduction-logging-security-purposes" target="_self">security logging system</a>&nbsp;to pick up on incidents your users are not aware of. To collect this information, you can use monitoring tools built into your off-the-shelf services (such as cloud email security panels), build an in-house team, or outsource to a managed security monitoring service.</li>
+<li>Smaller organisations that may lack dedicated logging resources may wish to try the&nbsp;<a href="https://www.ncsc.gov.uk/blog-post/logging-made-easy" target="_self">NCSC's Logging Made Easy open source project</a>, which provides a practical way to set up basic end-to-end Windows monitoring of your IT estate.</li>
+<li>Once a monitoring capability has been set up, it needs to be&nbsp;<a href="https://www.ncsc.gov.uk/blog-post/keeping-your-security-monitoring-effective" target="_self">kept up to date</a>&nbsp;to ensure it remains effective.&nbsp;<br><br></li>
+</ul>
+<h3 id="Phishingattacks:defendingyourorganisation-Haveanincidentresponseplan">Have an incident response plan</h3>
+<p>Once an incident is discovered, you need to know what to do to prevent any further harm as soon as possible.</p>
+<p><strong>How do I do this?</strong></p>
+<ul>
+<li>Ensure that your organisation knows what to do in the case of different types of incidents. For example, how will you force a password reset if the password is compromised? Who is responsible for removing malware from a device, and how will they do it? For more information, refer to the&nbsp;<a href="https://www.ncsc.gov.uk/guidance/10-steps-incident-management" rel="nofollow" target="_self">Incident Management section of 10 Steps to Cyber Security</a>.</li>
+<li>Incident response plans should be practised before an incident occurs. The best way to do this is through exercising. If you're new to this, the NCSC have created&nbsp;<a href="https://www.ncsc.gov.uk/information/exercise-in-a-box" target="_self">Exercise In A Box</a>, an online tool which helps you to find out how resilient you are to cyber attacks, and where you can practise your response in a safe environment.</li>
+</ul></div></div><div class="termButtons"></div></div></div></div></div><div class="pcf-article-content-item" id="section_5"><hr><div><h2>Case study: how multi-layered phishing mitigations defended against Dridex malware</h2><div class="pcf-BodyText"><p><span><span class="inline-comment-marker" data-ref="6e4d6486-ad47-4e25-984b-6e313ec46422">The following real-world example</span>&nbsp;illustrates how a company in the financial sector used effective&nbsp;<strong>layered</strong>&nbsp;mitigations to defend against phishing attacks.&nbsp;Reliance on any single layer would have missed some of the attacks, or in the case of relying on cleaning up quickly afterwards, be very costly and prohibitively time consuming.</span></p>
+<p>The company, which has around 4,000 employees, received 1,800 emails containing&nbsp;a number of variants of Dridex malware. The&nbsp;email claimed to be an invoice that needed urgent attention, which was relevant to the role of some of the recipients. It was not targeted at individual users with any personal information, but was well written, with good spelling and grammar.</p>
+<p><img src="/static-assets/images/phshing_case_study.jpg" p=""><a href="#downloads" target="_self">Download the phishing mitigations case study below (pdf)</a></p>
+<h3>Summary of the phishing attack:</h3>
+<ul>
+<li><strong>1,800</strong>&nbsp;emails were sent to the organisation by this campaign
+<ul>
+<li><strong>1,750</strong>&nbsp;were stopped by an email filtering service that identified that malware was present.<br></li>
+</ul>
+</li>
+<li>This left&nbsp;<strong>50</strong>&nbsp;emails that reached user inboxes.
+<ul>
+<li>Of these,&nbsp;<strong>36</strong>&nbsp;were either ignored by users, or reported using a button in their email client. 25 were reported in total, including some post click; this was the first indication that the attack had got through the initial layer of defences.<br></li>
+</ul>
+</li>
+<li>This left&nbsp;<strong>14</strong>&nbsp;emails that were clicked-on, which launched the malware.
+<ul>
+<li><strong>13</strong>&nbsp;instances of the malware failed to launch as intended due to devices being up-to-date.<br></li>
+</ul>
+</li>
+<li><strong>1</strong>&nbsp;instance of malware was installed.
+<ul>
+<li>The malware's call home to its operator was detected, reported and blocked.</li>
+<li>1 device was seized, investigated and cleaned in a few hours.<br></li>
+</ul>
+</li>
+</ul></div></div></div><div class="pcf-article-content-item" id="section_6"><hr><div><h2>Video summary:  defending your organisation from email phishing attacks</h2><div class="pcf-BodyText"><h2><br></h2>
+<p><iframe width="560" height="315" allowfullscreen="" frameborder="0" src="https://www.youtube-nocookie.com/embed/gGoPNrRVQUQ?modestbranding=1;rel=0"></iframe></p></div></div></div></div></div><div class="downloads-container"><hr><div class="pcf-downloads"><h2>Downloads</h2><div class="download-item"><a href="https://www.ncsc.gov.uk/files/phishing_guidance_final.pdf" class="media-link" target="_blank" rel="noopener noreferrer" aria-label="Phishing attacks - infographic.pdf - pdf 592 KB"><div class="pcf-results-item row null"><div class="image-container"><div class="pcf-image false"><img class="" src="https://www.ncsc.gov.uk/images/phishing_infographic_final - Copy.jpg?mpwidth=160&amp;mlwidth=190&amp;twidth=190&amp;dwidth=160&amp;dpr=1.25&amp;width=1536" alt="" aria-hidden="true"></div></div><div class="pcf-results-item__wrap"><div class="card-flags"></div><h4 class="pcf-results-item__title ">Phishing attacks - infographic.pdf</h4><div class="pcf-results-item__desc " aria-hidden="true"><div><p>Phishing attacks - infographic.pdf</p></div></div><ul class="meta" aria-hidden="true"><li class="meta__item">pdf</li><li class="meta__item">592 KB</li></ul></div></div></a></div><div class="download-item"><a href="https://www.ncsc.gov.uk/files/phishing_case_study.pdf" class="media-link" target="_blank" rel="noopener noreferrer" aria-label="Phishing attacks - case study - pdf 846 KB"><div class="pcf-results-item row null"><div class="image-container"><div class="pcf-image false"><img class="" src="https://www.ncsc.gov.uk/images/phishing case study - Copy.jpg?mpwidth=160&amp;mlwidth=190&amp;twidth=190&amp;dwidth=160&amp;dpr=1.25&amp;width=1536" alt="" aria-hidden="true"></div></div><div class="pcf-results-item__wrap"><div class="card-flags"></div><h4 class="pcf-results-item__title ">Phishing attacks - case study</h4><div class="pcf-results-item__desc " aria-hidden="true"><div><p>Phishing attacks - case study</p></div></div><ul class="meta" aria-hidden="true"><li class="meta__item">pdf</li><li class="meta__item">846 KB</li></ul></div></div></a></div></div></div><div class="topic-tags-container"><h2>Topics</h2><a href="https://www.ncsc.gov.uk/section/advice-guidance/all-topics?topics=Phishing"><button class="pcf-button button button--normalised button--topicTag" aria-disabled="false" tabindex="-1">Phishing<div class="logo-container"><svg version="1.1" x="0px" y="0px" fill="#2b70b9" viewBox="0 0 26 14"><polygon points="24,5.59 18.41,0 17,1.41 21.59,6 0,6 0,8 21.59,8 17,12.59 18.41,14 24,8.41 25.41,7 "></polygon></svg></div></button></a><a href="https://www.ncsc.gov.uk/section/advice-guidance/all-topics?topics=People-centred security"><button class="pcf-button button button--normalised button--topicTag" aria-disabled="false" tabindex="-1">People-centred security<div class="logo-container"><svg version="1.1" x="0px" y="0px" fill="#2b70b9" viewBox="0 0 26 14"><polygon points="24,5.59 18.41,0 17,1.41 21.59,6 0,6 0,8 21.59,8 17,12.59 18.41,14 24,8.41 25.41,7 ">
+</polygon></svg></div></button></a></div></div></div>-->
+<p><i>Phishing is a type of online scam where criminals impersonate legitimate 
+    organizations via email, text message, advertisements or other means in order 
+    to steal sensitive information.</i> </p>
+    <p>There are multiple websites who ask user to provide sensitive data such as 
+    username, password or credit card details etc. Often for malicious reasons. This 
+    type of websites is known as phishing website. </p>
+    <p>The phishing website will appear the same as the legitimate website and directs 
+    the user to a page to enter personal details of the user on the fake website. 
+    Through machine learning algorithms one can improve the accuracy of the 
+    prediction.</p></body>
+</html>

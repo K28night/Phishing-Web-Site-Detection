@@ -1,0 +1,111 @@
+{% load static %}
+<html>
+{% load widget_tweaks %}
+<head>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-image: url('/static/assets/img/farm6.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:cover;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(220, 228, 223);
+  padding: 50px 350px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-image: url("/static/assets/img/farm1.jpg");
+  /* background-color: rgb(144, 37, 180); */
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<form action="" method="POST" >
+    {% csrf_token %}
+  <div class="container">
+    <center>
+      <a href="/home">
+        <!-- <img src="{% static 'back.jpg' %}" width="60px"> -->
+      </a>
+    <h1 style="color: antiquewhite;">Feedback</h1>
+    
+    <hr>
+  
+
+    
+    <label style="color: rgb(17, 16, 15);"><b>Email</b></label>
+    {% render_field feed1.email class="form-control" %}
+ 
+    
+    
+    <label style="color: rgb(15, 15, 14);"><b>Feedback</b></label>
+    
+    {% render_field feed1.feed class="form-control" type="text" %}
+
+    <hr>
+    
+
+    <button type="submit" value="Submit" class="registerbtn">Submit</button>
+  </div>
+  
+  
+</form>
+</body>
+</html>

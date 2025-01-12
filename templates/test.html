@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .body{
+            padding: 100px 100px;
+        }
+     .bu {
+        background-color:green;
+        color: bisque;
+        border-color: black;
+     }
+     .tb{
+        display: inline-block;
+        
+        padding: 7px 100px;
+     }
+    </style>
+</head>
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<h1 align="center">URL Testing for Phishing Site</h1>
+<form name="forms" action="GET">
+    {% csrf_token %}
+    &nbsp;&nbsp;&nbsp;&nbsp;<b>Enter the URL:</b>
+    <input type="text" id="area"  ><br><br>
+    <span class="tb"></span>
+    <input class="button" name="Submit" type="Submit" value="predict" />
+<br><br>
+</form>
+</body>
+</html>

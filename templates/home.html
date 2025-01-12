@@ -1,0 +1,195 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    
+    <!-- Favicon -->
+    <link href="{% static 'img/favicon.ico' %}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+<style>
+.switch {
+ position: relative;
+ display: block;
+
+ width: 100px;
+ height: 30px;
+ padding: 3px;
+ margin: 0 10px 10px 0;
+ border-radius: 18px;
+ box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
+ cursor: pointer;
+ box-sizing:content-box;
+}
+.switch-input {
+ position: absolute;
+ top: 0;
+ left: 0;
+ opacity: 0;
+ box-sizing:content-box;
+}
+.switch-label {
+ position: relative;
+ display: block;
+ height: inherit;
+ font-size: 10px;
+ text-transform: uppercase;
+ background: red;
+ border-radius: inherit;
+ box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+ box-sizing:content-box;
+}
+.switch-label:before, 
+.switch-label:after {
+ position: absolute;
+ top: 50%;
+ margin-top: -.5em;
+ line-height: 1;
+ -webkit-transition: inherit;
+ -moz-transition: inherit;
+ -o-transition: inherit;
+ transition: inherit;
+ box-sizing:content-box;
+}
+.switch-label:before {
+ content: attr(data-off);
+ color: #eeeeee;
+ right: 11px;
+ text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+}
+.switch-label:after {
+ content: attr(data-on);
+ left: 11px;
+ color:white;
+ text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+ opacity: 0;
+}
+.switch-input:checked ~ .switch-label {
+ background: green;
+ box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.switch-input:checked ~ .switch-label:before {
+ opacity: 0;
+}
+.switch-input:checked ~ .switch-label:after {
+ opacity: 1;
+}
+.switch-handle {
+ position: absolute;
+ top: 7px;
+ left: 6px;
+ width: 20px;
+ height: 20px;
+ background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
+ background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);
+ border-radius: 40%;
+ box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.switch-handle:before {
+ content: "";
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ margin: -6px 0 0 -6px;
+ width: 12px;
+ height: 12px;
+ background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
+ background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);
+ border-radius: 6px;
+ box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+}
+.switch-input:checked ~ .switch-handle {
+ left: 74px;
+ box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.switch-label, .switch-handle {
+ transition: All 0.3s ease;
+ -webkit-transition: All 0.3s ease;
+ -moz-transition: All 0.3s ease;
+ -o-transition: All 0.3s ease;
+}
+.button {
+            background-color: #0000FF;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+          }
+
+</style>
+<body background="{% static 'img/e1.jpg' %}">
+    <div class="container-fluid nav-bar p-0">
+        <div class="container-lg p-0">
+            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="/profile_edit" class="nav-item nav-link" >Profile Edit</a>
+                        <a href="/contact" class="nav-item nav-link">Testing</a>
+                        <a href="/report" class="nav-item nav-link">Report</a>
+                        <a href="/feedback" class="nav-item nav-link">Feedback</a>
+                        <a href="/usersiteview" class="nav-item nav-link" >History</a>
+                        <a href="/logout" class="nav-item nav-link">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+   <h1 style="color: #eeeeee;" class="m-0 text-white display-4">
+    Auto Dectecting Mode</h1>
+<p style="color:white ;">You can enable by <b>click</b>ing <b>it</b>:</p>
+       <label class="switch">
+ <input class="switch-input" type="checkbox" onclick="b1.jpg" />
+ <span class="switch-label" data-on="On" data-off="Off"></span> 
+ <span class="switch-handle"></span> 
+</label>
+<p style="color:white ;">Methods such as the blacklisting of these phishing websites become untenable and cannot keep pace with the explosion of fake sites.</p>
+<p style="color:white ;"> Detection of nefarious websites must become automated and be able to adapt to this ever evolving form of social engineering.</p>
+<p style="color:white ;">We develop a framework, called ""Fresh-Phish"", for creating current machine learning data for phishing websites.</p>
+     <p style="color:white ;">
+      Using 30 different website features that we query using python, we build a large labeled dataset and analyze several machine learning classifiers against this dataset to determine which is the most accurate.
+       We analyze not just the accuracy of the technique, but also how long it takes to train the model</p>
+        <!-- <input type="button"  class="bu" value="Testing" style="height: 30px;; ; width: 120px;;" > -->
+        <!-- <h3><a href="{% url 'test' %}">Test</a></h3> -->
+        <!-- <a href="/logout">logout</a><br>
+        <a href="/profile_edit">Profile Edit</a><br> 
+        
+
+        <center>
+         <form method="POST">
+             {% csrf_token %}
+             <textarea id="area" name="area" placeholder="Enter your website url....."
+             style="width: 350px;height: 200px;
+                    padding: 10px; border:3px dashed indigo;
+                    background-color:aliceblue;">
+     </textarea>
+     
+     <br><br><br>
+     <input class="button" name="Submit" type="Submit" value="predict" />
+         </form>
+     
+     </center>
+-->
+       
+</body>
+</html>

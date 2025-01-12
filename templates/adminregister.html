@@ -1,0 +1,121 @@
+{% load static %}
+<html>
+  {% load widget_tweaks %}
+<head>
+  <!-- <script>
+    function checkpassword(form){
+      psw=form.psw.value;
+      psw1=form.psw1.value;
+      if(psw!=psw1){
+        alert("\npassword did not match: please try again..")
+        return false;
+                   }
+      else{
+        alert("\npassword match:welcome...")
+         return true;
+      }           
+    }
+  </script> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-image: url('/static/assets/img/reg-bg.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:cover;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(238, 248, 243);
+  padding: 50px 350px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-image: url("/static/assets/img/farm1.jpg");
+  /* background-color: rgb(254, 251, 255); */
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<form action="" method="POST">
+    {% csrf_token %}
+  <div class="container">
+    <center>
+    <h1 style="color: aliceblue;">Register</h1>
+    <p style="color: aliceblue;">Please fill in this form to create an account.</p></center>
+    <hr>
+    
+
+    <label for="user" style="color: rgb(110, 110, 22);"><b>Username</b></label><br><br>
+    {% render_field form.username class="form-control" %}
+
+
+
+    <label for="psw" style="color: rgb(159, 159, 20);"><b>Password</b></label><br><br>
+    {% render_field form.password class="form-control" type="password"  %}
+
+    <hr>
+    
+
+    <button type="submit" href="/login" class="registerbtn">Register</button>
+  </div>
+  
+  <div class="container signin">
+    <p style="color: antiquewhite;">Already have an account? <a href="/login">Login Here...</a>.</p>
+  </div>
+</form>
+</body>
+</html>

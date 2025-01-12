@@ -1,0 +1,43 @@
+{% load static %}
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <style>
+              .t1{
+                width: 350px;height: 200px;
+               padding: 10px; border:3px dashed indigo;
+               background-color:aliceblue;
+              }
+              </style>
+    </head>
+    <body background="{% static 'img/ii1.jpg' %}">
+        
+    <form action="" method="POST">
+    {% csrf_token %}
+    <br><br>
+    <h1 style="color:#ffff ;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><b><center>RESULT </center></b></h1>
+   <center>
+    <table border="1">
+        <tr><td><b>CATEGORY :</b></td><td>{{entered_text}}</td></tr><br>
+ <tr><td><b>DOMAIN :</b></td><td>{{entered_domain}}</td></tr><br>
+ <tr><td><b>IP ADDRESS :</b></td><td>{{entered_a1}}</td></tr><br>
+ <tr><td><b>SERVER :</b></td><td>{{entered_a2}}</td></tr><br>
+ <tr><td><b>MALWARE :</b></td><td>{{entered_a3}}</td></tr><br>
+ <tr><td><b>SPAMMING :</b></td><td>{{entered_a4}}</td></tr><br>
+ <tr><td><b><u>PHISHING </u>:</b></td><td>{{entered_a5}}</td></tr><br>
+ <tr><td><b>RISK SCORE :</b></td><td>{{entered_a6}}</td></tr><br>
+ <tr><td><b>SUSPECIOUS :</b></td><td>{{entered_a7}}</td></tr><br>
+ <tr><td><b>DOMAIN RANK  :</b></td><td>{{entered_a8}}</td></tr><br>
+ <!-- <tr><td><b>DOMAIN :</b></td><td>{{entered_domain}}</td></tr><br> -->
+
+    </table>
+    <br><br>
+   
+ 
+  <a href="/home">Back to home</a>
+    
+    </center>
+</form>
+    </body>
+   
+</html>

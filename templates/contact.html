@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title></head>
+    <body background="{% static 'img/l1.jpg' %}">
+<h1 style="color: bisque; text-align: center;">RESULT</h1>
+ <center><form method="POST">
+    {% csrf_token %}
+    <textarea id="area" name="area" placeholder="Enter your website url....."
+    style="width: 350px;height: 120px;
+           padding: 10px; border:3px dashed indigo;
+           background-color:aliceblue;">
+</textarea>
+
+<br><br><br>
+<input class="button" name="Submit" type="submit" value="predict" />
+</form></center>
+</body>
+</html>
